@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ezy-Health</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/vendor.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/js/modernizr.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+    <script src="/static/js/pace.min.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="/static/images/test.png" alt="Homepage" style="height:25px;width:100px;">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="about">Predict</a></li>
+                </ul>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content" style="padding-bottom:3em;">
+
+            <div class="row home-content__main" style="padding-bottom:15em;">
+
+                <h3>Welcome to <b>Ezy-Health</b>
+                    <h1>
+                        We are a group of coders<br>
+                        who have designed a<br>
+                        model for predicting necessity<br>
+                        of mental health check-up.
+                    </h1>
+
+                    <div class="home-content__buttons">
+                        <a href="#contact" class="smoothscroll btn btn--stroke" style="width:auto;">
+                            Predict health check up
+                        </a>
+
+                    </div>
+
+            </div>
+
+
+            <!-- preloader
+    ================================================== -->
+            <div id="preloader">
+                <div id="loader">
+                    <div class="line-scale-pulse-out">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact
+    ================================================== -->
+            <section id="contact" class="s-contact">
+
+                <div class="overlay"></div>
+                <div class="contact__line"></div>
+
+                <div class="row section-header" data-aos="fade-up">
+                    <div class="col-full">
+                        <h3 class="subhead">Try it out!</h3>
+                        <h1 class="display-2 display-2--light">Enter the details to predict if health check-up is
+                            needed!</h1>
+                    </div>
+                </div>
+
+                <div class="row contact-content" data-aos="fade-up">
+
+                    <div class="contact-primary">
+
+                        <h3 class="h6">Enter the details</h3>
+
+                        <form id="form1" name="form1" action="" method="">
+                            <!-- method:post action:check.php-->
+                            <fieldset>
+                                <input type="hidden" name="s.no" value="_" />
+                                <input type="hidden" name="Timestamp" value="_" />
+                                <input type="hidden" name="comments" value="_" />
+
+                                <div class="form-field">
+                                    <label class="question-label green-tag">Age</label>
+                                    <input name="Age" type="text" id="age" placeholder="Your Age" value=35 required=""
+                                        aria-required="true" class="full-width">
+                                </div>
+
+                                <label class="question-label">Gender</label>
+                                <select name="Gender" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+
+                                <div class="form-field">
+                                    <label class="question-label green-tag">Country</label>
+                                    <input name="Country" type="text" id="country" placeholder="Country" value="Canada"
+                                        required="" aria-required="true" class="full-width">
+                                </div>
+
+                                <label class="question-label">If you live in the United States, which state
+                                    or territory do you live in?</label>
+                                <div class="form-field">
+                                    <label class="question-label green-tag">State</label>
+                                    <input name="state" type="text" id="state"
+                                        placeholder="State in two characters(Caps)" value="" required=""
+                                        aria-required="true" class="full-width">
+                                </div>
+
+                                <label class="question-label">Are you self-employed?</label>
+                                <select name="self_employed"
+                                    style="background-color: black; width:40em; border-radius:6px;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label class="question-label">Do you have a family history of mental
+                                    illness?</label>
+                                <select name="family_history" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <label class="question-label">If you have a mental health condition, do you
+                                    feel that it interferes with your work?</label>
+                                <select name="work_interfere" style="background-color: black; width:40em;">
+                                    <option value="Sometimes" selected="selected">Sometimes</option>
+                                    <option value="Never">Never</option>
+                                    <option value="Rarely">Rarely</option>
+                                    <option value="Often">Often</option>
+                                </select>
+                                <label class="question-label">How many employees does your company or
+                                    organization have?</label>
+                                <select name="no_employees" style="background-color: black; width:40em;">
+                                    <option value="1-5" selected="selected">1-5</option>
+                                    <option value="6-25">6-25</option>
+                                    <option value="26-100">26-100</option>
+                                    <option value="100-500">100-500</option>
+                                    <option value="500-1000">500-1000</option>
+                                    <option value="More than 1000">More than 1000</option>
+                                </select>
+                                <label class="question-label">Do you work remotely (outside of an office)
+                                    at least 50% of the time?</label>
+                                <select name="remote_work" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label class="question-label">Is your employer primarily a tech
+                                    company/organization?</label>
+                                <select name="tech_company" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label class="question-label">Does your employer provide mental health
+                                    benefits?</label>
+                                <select name="benefits" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <label class="question-label">Do you know the options for mental health
+                                    care your employer provides?</label>
+                                <select name="care_options" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Not sure">Not Sure</option>
+                                </select>
+                                <label class="question-label">Has your employer ever discussed mental
+                                    health as part of an employee wellness program?</label>
+                                <select name="wellness_program" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <label class="question-label">Does your employer provide resources to learn
+                                    more about mental health issues and how to seek help?</label>
+                                <select name="seek_help" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <label class="question-label">Is your anonymity protected if you choose to
+                                    take advantage of mental health or substance abuse treatment resources?</label>
+                                <select name="anonymity" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <label class="question-label">How easy is it for you to take medical leave
+                                    for a mental health condition?</label>
+                                <select name="leave" style="background-color: black; width:40em;">
+                                    <option value="Don't know" selected="selected">Dont know</option>
+                                    <option value="Somewhat easy">Somewhat easy</option>
+                                    <option value="Very easy">Very easy</option>
+                                    <option value="Somewhat difficult">Somewhat difficult</option>
+                                    <option value="Very difficult">Very difficult</option>
+                                </select>
+                                <label class="question-label">Do you think that discussing a mental health
+                                    issue with your employer would have negative consequences?</label>
+                                <select name="mental_health_consequence" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <label class="question-label">Do you think that discussing a physical
+                                    health issue with your employer would have negative consequences?</label>
+                                <select name="phys_health_consequence" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <label class="question-label">Would you be willing to discuss a mental
+                                    health issue with your coworkers?</label>
+                                <select name="coworkers" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Some of them">Some of them</option>
+                                </select>
+                                <label class="question-label">Would you be willing to discuss a mental
+                                    health issue with your direct supervisor(s)?</label>
+                                <select name="supervisor" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Some of them">Some of them</option>
+                                </select>
+                                <label class="question-label">Would you bring up a mental health issue with
+                                    a potential employer in an interview?</label>
+                                <select name="mental_health_interview" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <label class="question-label">Would you bring up a physical health issue
+                                    with a potential employer in an interview?</label>
+                                <select name="phys_health_interview" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <label class="question-label">Do you feel that your employer takes mental
+                                    health as seriously as physical health?</label>
+                                <select name="mental_vs_physical" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Don't know</option>
+                                </select>
+                                <label class="question-label">Have you heard of or observed negative
+                                    consequences for coworkers with mental health conditions in your workplace?</label>
+                                <select name="obs_consequence" style="background-color: black; width:40em;">
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                                <input class="full-width btn--primary" style="margin-top: 7em" value="Submit"
+                                    type="button" onclick="greeting()"></input>
+                                <div class="form-field">
+                                    <!-- <button class="full-width btn--primary" name="submit" id="submit" onclick="myFunction()">Submit</button> -->
+                                    <div class="submit-loader">
+                                        <div class="text-loader">Sending...</div>
+                                        <div class="s-loader">
+                                            <div class="bounce1"></div>
+                                            <div class="bounce2"></div>
+                                            <div class="bounce3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+
+
+                        <!-- contact-warning -->
+                        <div id="message-warning" style="display:none;">
+                            <span style="font-size:3.5em; color: #ff3333; font-variant: small-caps;">Treatment
+                                Required</span>
+                        </div>
+
+                        <!-- contact-success -->
+                        <div id="message-success" style="display:none;">
+                            <span style="font-size:3.5em; color: #00cc33; font-variant: small-caps;">No Treatment
+                                Required</span>
+                        </div>
+
+                    </div> <!-- end contact-primary -->
+
+
+
+                </div> <!-- end contact-content -->
+
+            </section> <!-- end s-contact -->
+
+
+
+            <!-- Java Script
+    ================================================== -->
+            <script data-cfasync="false" src="/static/email-decode.min.js"></script>
+            <script src="/static/js/jquery-3.2.1.min.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+            <script src="/static/js/plugins.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+            <script src="/static/js/main.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+            <script src="/static/rocket-loader.min.js" data-cf-settings="97c79f8123ca910610ebe467-|49" defer="">
+            </script>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    function greeting() {
+        var formData = {};
+        $("#form1").serializeArray().map(function (x) {
+            formData[x.name] = Number(x.value) ? Number(x.value) : x.value;
+        });
+
+        $.ajax({
+            type: "POST",
+            crossDomain: true,
+            url: location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') +
+                '/api/v1/predict',
+            contentType: "application/json",
+            data: JSON.stringify(formData),
+            success: function (resp) {
+                console.log(resp);
+
+                var check = resp['treatment'];
+                if (check === true) {
+                    $('#message-warning').fadeIn()
+                    $('#message-success').fadeOut()
+                } else {
+                    $('#message-warning').fadeOut()
+                    $('#message-success').fadeIn()
+                }
+            }
+        });
+    }
+
+    $('#form1').change(function () {
+        console.log("Form Changed");
+        $('#message-warning').fadeOut()
+        $('#message-success').fadeOut()
+
+    });
+</script>
+
+
+</html>
